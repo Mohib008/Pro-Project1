@@ -8,20 +8,20 @@ class RecipeList extends Component{
         recipes:[
             {
                 title: "Avocado Toast",
-                ingredients: ['Pasta', 'Flour', 'Water'],
-                instructions: "Mix ingredients",
+                ingredients: ['2 slices of bread', '2 avocado', '1 tablespoon olive oil', '1 pinch of salt', 'pepper'],
+                instructions: "Toast bread. Slice avocado and spread on bread. Add salt, oil, and pepper to taste.",
                 img: "pasta.jpg"
             },
             {
                 title: "Milkshake",
-                ingredients: ['Pasta', 'Flour', 'Water'],
-                instructions: "Mix ingredients",
+                ingredients: ['2 Scoops Ice cream', '8 ounces milk', 'chaclate & cream'],
+                instructions: "Combine ice cream and milk. Blend unil creamy",
                 img: "milkshake.jpg"
             },
             {
                 title: "Spaghetti",
-                ingredients: ['Pasta', 'Flour', 'Water'],
-                instructions: "Mix ingredients",
+                ingredients: ['Pasta', '8 cups water', '1 box spaghetti'],
+                instructions: "Open jar of Spaghetti sauce. Bring to simmer. Boil water. Cook pasta unitl done. Combine pasta and sauce.",
                 img: "spaghetti.jpg"
             }
         ]
