@@ -15,17 +15,16 @@ class recipeInput extends Component {
 render(){
     const {title, instructions, ingredients, img} = this.state;
     let inputs = ingredients.map((ing, i) => (
-        <div>
+        <div className="recipe-form-line" key={`ingredient-${i}`}>
             <label>
                 <input 
-                type = "text",
-                name = {`ingredients - ${i}`},
+                type = "text"
+                name = {`ingredients - ${i}`}
                 value = {ing}
                 size = {45}
                 autoComplete = "off"
                 placeHolder="ingredient"
-                onChange = {() => {}}
-                 />
+                onChange = {() => {}} />
             </label>
         </div>
     ))
