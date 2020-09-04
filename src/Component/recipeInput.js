@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import './recipeInput.css';
 
 
-class recipeInput extends Component {
+class RecipeInput extends Component {
     static defaultProps = {
         onClose() {},
         onSave() {}
@@ -38,7 +38,7 @@ class recipeInput extends Component {
    }
    handleSubmit(e){
        e.preventDefault();
-       this.props.onSave({...this.state});
+       this.props.onSave({ ...this.state });
        this.setState({
            title: '',
            instructions: '',
@@ -52,15 +52,15 @@ render(){
     const {onClose} = this.props;
     let inputs = ingredients.map((ing, i) => (
         <div className="recipe-form-line" key={`ingredient-${i}`}>
-            <label>{i+1}.
+            <label>{i + 1}.
                 <input 
                 type = "text"
-                name = {`ingredients - ${i}`}
+                name = {`ingredients-${i}`}
                 value = {ing}
                 size = {45}
                 autoComplete = "off"
                 placeholder="ingredient"
-                onChange = {() => {}} />
+                onChange = {this.handleChangeIng} />
             </label>
         </div>
     ));
@@ -137,4 +137,4 @@ return (
 }
 
 
-export default recipeInput;
+export default RecipeInput;

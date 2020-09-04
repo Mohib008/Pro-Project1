@@ -8,7 +8,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      recipe: [
+      recipes: [
         {
           id: 0,
           title: "Avocado Toast",
@@ -33,6 +33,7 @@ class App extends Component {
       ],
       nextRecipeId: 3,
     }
+    this.handleSave = this.handleSave.bind(this);
   }
 
   handleSave(recipe){
@@ -49,10 +50,13 @@ class App extends Component {
   return (
     <div className="App">
     <Navbar />
-    <RecipeInput onSave-={this.handleSave}/>
-    <RecipeList recipe ={this.state.recipe} />
-    </div>
-   );
+    <RecipeInput 
+      onSave-={this.handleSave}
+      
+    />
+      <RecipeList recipes ={this.state.recipes} />
+      </div>
+    );
   } 
 }
 
