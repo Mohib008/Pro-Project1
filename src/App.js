@@ -51,7 +51,7 @@ class App extends Component {
     <div className="App">
     <Navbar />
     <RecipeInput 
-      onSave-={this.handleSave}
+      onSave={this.handleSave}
       
     />
       <RecipeList recipes ={this.state.recipes} />
