@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../../React"
+		},
+		{
+			"path": "../../../portfolio"
+		},
+		{
+			"path": "../../../my-component"
+		},
+		{
+			"path": "../../../Pro-Project2-recipe"
+		},
+		{
+			"path": "../../../dom"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
