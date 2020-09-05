@@ -1,17 +1,18 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 import Recipe from "./recipe";
 import "./RecipeList.css";
 
 
 class RecipeList extends Component{
-    static defaultProps = {
-        recipes:[
-            
-        ]
+    static propTypes = {
+        recipes: PropTypes.arrayOf(PropTypes.object).isRequired,
+        onDelete: PropTypes.func.isRequired,
     }
     render(){
+        const {onDelete} = this.props;
         const recipes = this.props.recipes.map((r, index) => (
-            <Recipe key={r.id} {...r} />
+            <Recipe key={r.id} {...r} onDelete={onDelete} />
         ));
         return (
             <div className="recipe-list">
